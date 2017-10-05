@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Assignment1_Driver</groupId>
+  <artifactId>AS1DR</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <distributionManagement>  
+    <repository>
+        <id>Maven</id>
+        <name>Assignment</name>
+        <url>https://www.dropbox.com/sh/285n2vx7o1ys42f/AADtb8Yxd_V3_UG56YC0pVKga?dl=0</url>
+    </repository>
+  </distributionManagement>
+</project>
