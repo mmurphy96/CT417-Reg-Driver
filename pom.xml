@@ -3,11 +3,50 @@
   <groupId>Assignment1_Driver</groupId>
   <artifactId>AS1DR</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-    <distributionManagement>  
-    <repository>
-        <id>Maven</id>
-        <name>Assignment</name>
-        <url>https://www.dropbox.com/sh/285n2vx7o1ys42f/AADtb8Yxd_V3_UG56YC0pVKga?dl=0</url>
-    </repository>
-  </distributionManagement>
+
+<!-- JitPack is used to build and serve the artifacts to the project  -->  	
+  	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+  	
+  	<!-- This dependencies is the connection between this project(B)
+  		and the released project(A) -->
+ 	<dependencies>
+		<dependency>
+ 			<groupId>com.github.mmurphy96</groupId>
+	    	<artifactId>CT417-REG1</artifactId>
+	    	<version>0.3</version>
+		</dependency>
+	</dependencies>
+
+<!-- plugin below creates the executable jar -->
+ <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Test_Driver</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
