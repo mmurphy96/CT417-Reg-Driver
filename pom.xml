@@ -4,6 +4,7 @@
   <artifactId>AS1DR</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+
 <!-- JitPack is used to build and serve the artifacts to the project  -->  	
   	<repositories>
 		<repository>

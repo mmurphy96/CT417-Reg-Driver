@@ -6,7 +6,6 @@ import org.joda.time.DateTime;
 public class Test_Driver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		//Create Student Arrays
 		ArrayList<Student> ECEstudents = new ArrayList<Student>();
 		ArrayList<Student> ComStudents = new ArrayList<Student>();
